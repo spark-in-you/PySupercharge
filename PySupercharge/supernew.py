@@ -17,17 +17,20 @@ import numpy as np
 #-------------Supercharging Standalone Backend--------------
 
 #Global variables
+#Charge list of amino acids
 chargeDict={'D': -1, 'T': 0, 'S': 0, 'E': -1, 'P': 0, 'G': 0, 'A': 0,\
             'C': -0.1, 'V': 0, 'M': 0, 'I': 0, 'L': 0, 'Y': 0,'F': 0,\
             'H': 0.1, 'K': 1, 'R': 1, 'W': 0, 'Q': 0, 'N': 0}
 
+#Amino acid list
 aaList=['D', 'T', 'S', 'E', 'P', 'G', 'A', 'C', 'V', 'M',
     'I', 'L', 'Y', 'F', 'H', 'K', 'R', 'W', 'Q', 'N']
 
+#matplotlib style
 style.use("seaborn-notebook")
 
 
-
+#Class 
 class superSeq(object):
 
     def __init__(self, seqRaw, filename='', name='protein',formated=False):
